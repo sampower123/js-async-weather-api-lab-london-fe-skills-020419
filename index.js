@@ -63,6 +63,7 @@ function fetchFiveDayForecast(formValue) {
   fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${formValue}&APPID=${API_KEY}`)
   .then(resp => resp.json())
   .then(json => displayFiveDayForecast(json));
+  console.log(formValue)
 }
 
 function displayFiveDayForecast(json) {
