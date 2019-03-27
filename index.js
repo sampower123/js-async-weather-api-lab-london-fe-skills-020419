@@ -25,7 +25,7 @@ function displayCurrentWeather(json) {
   console.log(temp)
   const current = document.querySelector('#current')
   const currentTemp = document.createElement('currentTemp')
-  currentTemp.innerHTML = `<h2>${temp}°</h2>`
+  currentTemp.innerHTML = `<p>${temp}°</p>`
   current.appendChild(currentTemp)
   
   // min temp
