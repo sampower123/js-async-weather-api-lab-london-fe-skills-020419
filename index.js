@@ -22,7 +22,6 @@ function displayCurrentWeather(json) {
   
   // current temp
   var temp = json.main.temp
-  console.log(temp)
   const current = document.querySelector('#current')
   const currentTemp = document.createElement('currentTemp')
   currentTemp.innerHTML = `<p>${temp}°</p>`
@@ -30,7 +29,6 @@ function displayCurrentWeather(json) {
   
   // min temp
   var min = json.main.temp_min
-  console.log(min)
   const minId = document.querySelector('#min')
   const minTemp = document.createElement('minTemp')
   minTemp.innerHTML = `<p>${min}°</p>`
@@ -38,7 +36,6 @@ function displayCurrentWeather(json) {
   
   // max temp
   var max = json.main.temp_max
-  console.log(max)
   const maxId = document.querySelector('#max')
   const maxTemp = document.createElement('maxTemp')
   maxTemp.innerHTML = `<p>${max}°</p>`
@@ -53,7 +50,6 @@ function displayCurrentWeather(json) {
   
    // cloud cover
   var clouds = json.clouds.all
-  console.log(clouds)
   const cloudsId = document.querySelector('#clouds')
   const cloudsTemp = document.createElement('cloudsTemp')
   cloudsTemp.innerHTML = `<p>${clouds}%</p>`
