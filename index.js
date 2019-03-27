@@ -33,7 +33,7 @@ function displayCurrentWeather(json) {
   console.log(min)
   const minId = document.querySelector('#min')
   const minTemp = document.createElement('minTemp')
-  minTemp.innerHTML = `<h2>${min}°</h2>`
+  minTemp.innerHTML = `<p>${min}°</p>`
   minId.appendChild(minTemp)
   
   // max temp
@@ -41,7 +41,7 @@ function displayCurrentWeather(json) {
   console.log(max)
   const maxId = document.querySelector('#max')
   const maxTemp = document.createElement('maxTemp')
-  maxTemp.innerHTML = `<h2>${max}°</h2>`
+  maxTemp.innerHTML = `<p>${max}°</p>`
   maxId.appendChild(maxTemp)
   
    // humidity
@@ -49,7 +49,7 @@ function displayCurrentWeather(json) {
   console.log(max)
   const humidityId = document.querySelector('#humidity')
   const humidityTemp = document.createElement('humidityTemp')
-  humidityTemp.innerHTML = `<h2>${humidity}%</h2>`
+  humidityTemp.innerHTML = `<p>${humidity}%</p>`
   humidityId.appendChild(humidityTemp)
   
    // cloud cover
@@ -57,7 +57,7 @@ function displayCurrentWeather(json) {
   console.log(clouds)
   const cloudsId = document.querySelector('#clouds')
   const cloudsTemp = document.createElement('cloudsTemp')
-  cloudsTemp.innerHTML = `<h2>${clouds}%</h2>`
+  cloudsTemp.innerHTML = `<p>${clouds}%</p>`
   cloudsId.appendChild(cloudsTemp)
   
 }
