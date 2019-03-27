@@ -73,7 +73,7 @@ function displayFiveDayForecast(json) {
   json.forEach(forecast => {
     const h2 = document.createElement('h2')
     h2.innerHTML = `<h2>${json.list.main.temp}</h2>`
-    main.appendChild(h2)
+    aside.appendChild(h2)
   })
 }
 
