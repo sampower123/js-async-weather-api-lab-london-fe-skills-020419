@@ -46,7 +46,6 @@ function displayCurrentWeather(json) {
   
    // humidity
   var humidity = json.main.humidity
-  console.log(max)
   const humidityId = document.querySelector('#humidity')
   const humidityTemp = document.createElement('humidityTemp')
   humidityTemp.innerHTML = `<p>${humidity}%</p>`
