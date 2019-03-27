@@ -62,7 +62,7 @@ function fetchFiveDayForecast(formValue) {
   //fetch five day forecast data based on city
   fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${formValue}&APPID=${API_KEY}`)
   .then(resp => resp.json())
-  .then(json => displayCurrentWeather(json));
+  .then(json => displayFiveDayForecast(json));
 }
 
 function displayFiveDayForecast(json) {
